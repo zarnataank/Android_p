@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "834328480600",
+    "project_id": "javalearningapp-9cb9a",
+    "storage_bucket": "javalearningapp-9cb9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834328480600:android:883093d866d0ddb4efb32d",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9ij92U8I7n9ecBI-9jdkRawF638OnzEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

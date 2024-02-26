@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/history"
+        android:title="Java history"
+        android:icon="@drawable/img_9"/>
+    <item
+        android:id="@+id/interview"
+        android:title="Interview questions"
+        android:icon="@drawable/img_7"/>
+    <item
+        android:id="@+id/fqas"
+        android:title="Fqas"
+        android:icon="@drawable/img_8"/>
+
+</menu>
