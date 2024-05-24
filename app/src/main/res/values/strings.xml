@@ -4,95 +4,105 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open">open </string>
     <string name="close">close</string>
-    <string name="title_activity_tutorials">tutorials</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
 
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
+    <string name="switchcase">The switch statement is a multiway branch statement. It provides an easy way to dispatch execution to different parts of code based on the value of the expression. </string>
+    <string name="ifelseifelse">a user can decide among multiple options.The if statements are executed from the top down. As soon as one of the conditions controlling the if is true, the statement associated with that ‘if’ is executed, and the rest of the ladder is bypassed. If none of the conditions is true, then the final else statement will be executed. There can be as many as ‘else if’ blocks associated with one ‘if’ block but only one ‘else’ block is allowed with one ‘if’ block.</string>
+    <string name="ifif">A nested if is an if statement that is the target of another if or else. Nested if statements mean an if statement inside an if statement. Yes, java allows us to nest if statements within if statements. i.e, we can place an if statement inside another if statement.
 
-        "Bold, graphic, intentional.\n\n"
+</string>
+    <string name="iff">The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false? Here comes the else statement. We can use the else statement with the if statement to execute a block of code when the condition is false. </string>
+    <string name="jdk">The Java Development Kit (JDK) is a cross-platformed software development environment that offers a collection of tools and libraries necessary for developing Java-based software applications and applets. It is a core package used in Java, along with the JVM (Java Virtual Machine) and the JRE (Java Runtime Environment).
 
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
+Beginners often get confused with JRE and JDK, if you are only interested in running Java programs on your machine then you can easily do it using Java Runtime Environment. However, if you would like to develop a Java-based software application then along with JRE you may need some additional necessary tools, which is called JDK.</string>
+    <string name="jre">Java Runtime Environment (JRE) is an open-access software distribution that has a Java class library, specific tools, and a separate JVM. In Java, JRE is one of the interrelated components in the Java Development Kit (JDK). It is the most common environment available on devices for running Java programs. Java source code is compiled and converted to Java bytecode. If you want to run this bytecode on any platform, you need JRE. The JRE loads classes check memory access and get system resources. JRE acts as a software layer on top of the operating system.</string>
+    <string name="jvm">JVM(Java Virtual Machine) acts as a run-time engine to run Java applications. JVM is the one that actually calls the main method present in a Java code. JVM is a part of JRE(Java Runtime Environment).
 
-        "Motion provides meaning.\n\n"
+Java applications are called WORA (Write Once Run Anywhere). This means a programmer can develop Java code on one system and can expect it to run on any other Java-enabled system without any adjustment. This is all possible because of JVM.
 
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+When we compile a .java file, .class files(contains byte-code) with the same class names present in .java file are generated by the Java compiler. This .class file goes into various steps when we run it. These steps together describe the whole JVM. </string>
+    <string name="mainmethod">Public static void main (String args [])
+1.The public keyword is an access specifies, which allows the programmer to control the visibility of class members. When a class member is preceded by public, then that member may be accessed by code outside the class in which it is declared. In this case, main ( ) must be declared as public.
+2.The keyword static allows main ( ) to be called without having to instantiate a particular instance of the class.This is necessary since main ( ) is called by the Java interpreter before any objects are made.
+3.The keyword void simply tells the compiler that main ( ) does not return a value.
+4.Main ( ) is the method, called when a Java application begins.
+5.String args [ ] declares a parameter named args, which is an array of instances of the class String. In this case,
+args receives any command-line arguments present when the program is executed.
+7.With the same name as args we can?t define one more variable we will get CTE.
+8.PSVM (String [] p) p is a variable which is defined as a identifier.
+</string>
+    <string name="datatype">Unlike primitive data types, these are not predefined. These are user-defined data types created by programmers. These data types are used to store multiple values.or example, consider an array that stores a group of values. Class is also a primitive type that stores different methods and variables. Therefore, these are also called as advanced data types in Java.
 
-        "3D world.\n\n"
+Whenever a non-primitive data type is defined, it refers a memory location where the data is stored in heap memory i.e., it refers to the memory location where an object is placed. Therefore, a non-primitive data type variable is also called referenced data type or simply object reference variable.
 
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
+An object reference variable lives on the stack memory and the object to which it points always lives on the heap memory. The stack holds a pointer to the object on the heap.</string>
+    <string name="ifelse">if: if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statements is executed otherwise not.
 
-        "Light and shadow.\n\n"
+</string>
+    <string name="gas">Getter in Java: Getter returns the value (accessors), it returns the value of data type int, String, double, float, etc. For the program’s convenience, the getter starts with the word “get” followed by the variable name.
 
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+Setter in Java: While Setter sets or updates the value (mutators). It sets the value for any variable used in a class’s programs. and starts with the word “set” followed by variable name. </string>
+    <string name="constr">When Java Constructor is called?
+Each time an object is created using a new() keyword, at least one constructor (it could be the default constructor) is invoked to assign initial values to the data members of the same class. Rules for writing constructors are as follows:
 
-        "Resting elevation.\n\n"
+The constructor(s) of a class must have the same name as the class name in which it resides.
+A constructor in Java can not be abstract, final, static, or Synchronized.
+Access modifiers can be used in constructor declaration to control its access i.e which other class can call the constructor.
+</string>
+    <string name="absif">Java Abstract classes and Java Abstract methods
+An abstract class is a class that is declared with an abstract keyword.
+An abstract method is a method that is declared without implementation.
+An abstract class may or may not have all abstract methods. Some of them can be concrete methods
+A method-defined abstract must always be redefined in the subclass, thus making overriding compulsory or making the subclass itself abstract.
+Any class that contains one or more abstract methods must also be declared with an abstract keyword.
+There can be no object of an abstract class. That is, an abstract class can not be directly instantiated with the new operator.
+An abstract class can have parameterized constructors and the default constructor is always present in an abstract class.</string>
+    <string name="abs">Abstraction in Java is the process in which we only show essential details/functionality to the user. The non-essential implementation details are not displayed to the user. </string>
+    <string name="enc">Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates. Another way to think about encapsulation is, that it is a protective shield that prevents the data from being accessed by the code outside this shield.
 
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
+Technically in encapsulation, the variables or data of a class is hidden from any other class and can be accessed only through any member function of its own class in which it is declared.
+As in encapsulation, the data in a class is hidden from other classes using the data hiding concept which is achieved by making the members or methods of a class private, and the class is exposed to the end-user or the world without providing any details behind implementation using the abstraction concept, so it is also known as a combination of data-hiding and abstraction.
+Encapsulation can be achieved by Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables.
+It is more defined with the setter and getter method.</string>
+    <string name="run">Runtime Polymorphism in Java
+It is also known as Dynamic Method Dispatch. It is a process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by Method Overriding. Method overriding, on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.</string>
+    <string name="poly">Polymorphism is considered one of the important features of Object-Oriented Programming. Polymorphism allows us to perform a single action in different ways. In other words, polymorphism allows you to define one interface and have multiple implementations. The word “poly” means many and “morphs” means forms, So it means many forms.</string>
+    <string name="compile">Compile-Time Polymorphism in Java
+It is also known as static polymorphism. This type of polymorphism is achieved by function overloading or operator overloading. </string>
+    <string name="extendkey">The extends keyword is used for inheritance in Java. Using the extends keyword indicates you are derived from an existing class. In other words, “extends” refers to increased functionality.</string>
+    <string name="need">Why Do We Need Java Inheritance?
+Code Reusability: The code written in the Superclass is common to all subclasses. Child classes can directly use the parent class code.
+Method Overriding: Method Overriding is achievable only through Inheritance. It is one of the ways by which Java achieves Run Time Polymorphism.
+Abstraction: The concept of abstract where we do not have to provide all details is achieved through inheritance. Abstraction only shows the functionality to the user.</string>
+    <string name="inherit">Java, Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in Java by which one class is allowed to inherit the features(fields and methods) of another class. In Java, Inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition, you can add new fields and methods to your current class as well.  </string>
+    <string name="stringbuilder">StringBuilder in Java represents an alternative to String and StringBuffer Class, as it creates a mutable sequence of characters and it is not thread safe. It is used only within the thread , so there is no extra overhead , so it is mainly used for single threaded program.</string>
+    <string name="stringbuffer">StringBuffer is a peer class of String, it is mutable in nature and it is thread safe class , we can use it when we have multi threaded environment and shared object of string buffer i.e, used by mutiple thread. As it is thread safe so there is extra overhead, so it is mainly used for multithreaded program.</string>
+    <string name="string">Strings are the type of objects that can store the character of values and in Java, every character is stored in 16 bits i,e using UTF 16-bit encoding. A string acts the same as an array of characters in Java.</string>
+    <string name="unboxing">It is just the reverse process of autoboxing. Automatically converting an object of a wrapper class to its corresponding primitive type is known as unboxing. For example – conversion of Integer to int, Long to long, Double to double, etc. </string>
+    <string name="twodimen">Two – dimensional array is the simplest form of a multidimensional array. A two – dimensional array can be seen as an array of one – dimensional array for easier understanding. </string>
+    <string name="initilazarray">Only the declaration of the array is not sufficient. In order to store values in the array, it is required to initialize it after declaration. The syntax of initializing an array is given below.
 
-        "Component elevations.\n\n"
+datatype [] arrayName = new datatype [ size ]  </string>
+    <string name="constructor">What are Constructors in Java?
+In Java, a Constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling the constructor, memory for the object is allocated in the memory. It is a special type of method that is used to initialize the object. Every time an object is created using the new() keyword, at least one constructor is called.</string>
+    <string name="autoboxing">The automatic conversion of primitive types to the object of their corresponding wrapper classes is known as autoboxing. For example – conversion of int to Integer, long to Long, double to Double, etc.
 
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+</string>
+    <string name="wrappertwo">There are certain needs for using the Wrapper class in Java as mentioned below:
 
-        "Responsive elevation and dynamic elevation offsets.\n\n"
+They convert primitive data types into objects. Objects are needed if we wish to modify the arguments passed into a method (because primitive types are passed by value).
+The classes in java.util package handles only objects and hence wrapper classes help in this case also.
+Data structures in the Collection framework, such as ArrayList and Vector, store only objects (reference types) and not primitive types.
+An object is needed to support synchronization in multithreading.</string>
+    <string name="declarearry">datatype [] arrayName;
+Here, the datatype is the type of element that will be stored in the array, square bracket[] is for the size of the array, and arrayName is the name of the array.
+</string>
+    <string name="arrayone">Java array is an object which contains elements of a similar data type. Additionally, The elements of an array are stored in a contiguous memory location. It is a data structure where we store similar elements. We can store only a fixed set of elements in a Java array.
 
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
+Array in Java is index-based, the first element of the array is stored at the 0th index, 2nd element is stored on 1st index and so on.</string>
+    <string name="wrapper">A Wrapper class in Java is a class whose object wraps or contains primitive data types. When we create an object to a wrapper class, it contains a field and in this field, we can store primitive data types. In other words, we can wrap a primitive value into a wrapper class object</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
-        "Avoiding elevation interference.\n\n"
-
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
-    </string>
-    <string name="action_settings">Settings</string>
 </resources>

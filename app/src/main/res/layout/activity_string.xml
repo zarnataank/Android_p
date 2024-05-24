@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Project">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardElevation="20dp"
+        android:layout_margin="20dp"
+        app:strokeWidth="2dp"
+        android:id="@+id/title"
+        app:strokeColor="@color/border"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="What is String?"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_margin="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:strokeColor="@color/border"
+        app:strokeWidth="2dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/string"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Strings in Java"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/stringinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/string"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/string" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/strimg"
+                    app:layout_constraintTop_toBottomOf="@+id/stringinfo"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/string"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/strimg"
+                    android:text="StringBuffer"
+                    android:id="@+id/stringbuffer"
+                    android:textSize="20dp"
+                    android:textColor="@color/teal_200"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stringbuffer"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:id="@+id/stringbufferinfo"
+                    android:text="@string/stringbuffer"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/stringbufferinfo"
+                    android:text="StringBuilder"
+                    android:textSize="20dp"
+                    android:id="@+id/stringbuilder"
+                    android:textColor="@color/teal_200"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stringbuilder"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:id="@+id/stringbuilderinfo"
+                    android:text="@string/stringbuilder"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

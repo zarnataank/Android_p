@@ -1,17 +1,17 @@
 package com.example.projectZarna;
 
 public class MytutorialModel {
-String text;
+    java.lang.String text;
 
-    public String getText() {
+    public java.lang.String getText() {
         return text;
     }
 
-    public void setText(String text) {
+    public void setText(java.lang.String text) {
         this.text = text;
     }
 
-    public MytutorialModel(String text) {
+    public MytutorialModel(java.lang.String text) {
         this.text = text;
     }
 }

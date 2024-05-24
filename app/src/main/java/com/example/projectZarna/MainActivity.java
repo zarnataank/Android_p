@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -16,8 +18,15 @@ import com.example.project.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
+    RecyclerView recyclerView;
+    List<String> mList;
+    MymcqsAdapter adapter;
+
     FrameLayout frame;
     Toolbar toolbar;
     NavigationView navigationView;
@@ -40,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
 
 
+
         bottomNavigationView.setOnNavigationItemSelectedListener(nav);
         getSupportFragmentManager().beginTransaction().replace(R.id.frame, new tutorials()).commit();
 
@@ -55,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
               {
                   getSupportFragmentManager().beginTransaction().replace(R.id.frame,new Interview()).commit();
               }
-              else if(id==R.id.fqas)
+              else if(id==R.id.logout)
               {
                   getSupportFragmentManager().beginTransaction().replace(R.id.frame,new fqas()).commit();
               }
@@ -94,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
 }
+
 
 
 

@@ -22,7 +22,6 @@ public class Mcqs extends Fragment {
 
 
     public Mcqs() {
-
     }
 
 
@@ -42,29 +41,28 @@ public class Mcqs extends Fragment {
     public ArrayList<MymcqsModel> generate()
     {
         ArrayList<MymcqsModel> items=new ArrayList<>();
-        items.add(new MymcqsModel("Number of primitive data types in Java are 8" ));
-        items.add(new MymcqsModel("Automatic type conversion is possible is int to long"));
-        items.add(new MymcqsModel("JDK is java development kit"));
-        items.add(new MymcqsModel("JRE is java runtime environment"));
-        items.add(new MymcqsModel("JVM is java virtual machine"));
-        items.add(new MymcqsModel("Package is group of similar classes,interfaces"));
-        items.add(new MymcqsModel("JIT is just in time complier"));
-        items.add(new MymcqsModel("Class is not real world entity "));
-        items.add(new MymcqsModel("Object is to implement real world entity"));
-        items.add(new MymcqsModel("Abstract declared under abstract keyword"));
-        items.add(new MymcqsModel("Interface is mechansim to achieve abstraction"));
-        items.add(new MymcqsModel("Wrapper convert primitive into object and object into primitive"));
-        items.add(new MymcqsModel("AWT abstract window toolkit"));
-        items.add(new MymcqsModel("Swing is GUI to create applications "));
-        items.add(new MymcqsModel("try-used to specify a block where exception take places"));
-        items.add(new MymcqsModel("catch-handle the exception"));
-        items.add(new MymcqsModel("finally-execute the code"));
-        items.add(new MymcqsModel("throw-to throw exception"));
-        items.add(new MymcqsModel("throws-declare the exception "));
-
-
+        items.add(new MymcqsModel("Number of primitive data types in Java are 8","int,char,byte,short,long,float,double,boolean" ));
+        items.add(new MymcqsModel("Hashset","unordered Collection of unique elements" ));
+        items.add(new MymcqsModel("Treeset","sorted collection of unique elements" ));
+        items.add(new MymcqsModel("Shallow copy","A shallow copy creates a new object with the same reference as the original object," ));
+        items.add(new MymcqsModel("Deep copy","deep copy creates a new object with a new reference." ));
+        items.add(new MymcqsModel("Wrapper class","A wrapper class in Java is a class whose object contains or surrounds primitive data types." ));
+        items.add(new MymcqsModel("Can we declare Pointer in Java","No, Java doesn’t provide the support of Pointer" ));
+        items.add(new MymcqsModel("What are Packages in Java?","Packages in Java can be defined as the grouping of related types of classes, interfaces, etc providing access to protection "));
+        items.add(new MymcqsModel(" Why Packages are used?","Packages are used in Java in order to prevent naming conflicts, control access"));
+        items.add(new MymcqsModel(" What is this keyword in Java?","‘this’ is a keyword used to reference a variable that refers to the current object."));
+        items.add(new MymcqsModel(" What is the constructor?","Constructor is a special method that is used to initialize objects."));
+        items.add(new MymcqsModel(" When is  constructor called?","Constructor is called when a object is created. The name of constructor is same as of the class."));
+        items.add(new MymcqsModel(" Explain inheritance in short?","Inheritance is the method by which the Child class can inherit the features of the Super or Parent class"));
+        items.add(new MymcqsModel(" Explain multilevel inheritance in short?","When a child or subclass extends any other subclass a hierarchy of inheritance is created which is known as multilevel inheritance."));
+        items.add(new MymcqsModel(" Explain Hierarchical inheritance in short?","When multiple subclasses derive from the same parent class is known as Hierarchical Inheritance."));
+        items.add(new MymcqsModel(" Explain Multiple  inheritance in short?","When a child class inherits from multiple parent classes is known as Multiple Inheritance."));
+        items.add(new MymcqsModel("  Can the constructor be inherited?","No, we can’t inherit a constructor."));
+        items.add(new MymcqsModel("  What are method overloading "," In method overloading two or more methods are shared in the same class with a different signature. "));
+        items.add(new MymcqsModel("  What are method overriding "," occurs when a subclass can provide the implementation of a method which is already defined in the parent class or superclass."));
+        items.add(new MymcqsModel(" What is Abstraction?"," Abstraction refers to the act of representing essential features without including background details"));
+        items.add(new MymcqsModel(" What is Abstract class?"," A class declared as abstract, cannot be instantiated i.e., the object cannot be created."));
         return items;
-
     }
 
 

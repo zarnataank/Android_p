@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.projectZarna.Controlstatements">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardElevation="20dp"
+        android:layout_margin="20dp"
+        app:strokeWidth="2dp"
+        android:id="@+id/title"
+        app:strokeColor="@color/border"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Control statements"
+            android:textSize="30dp"
+            android:id="@+id/control"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_margin="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:strokeColor="@color/border"
+        app:strokeWidth="2dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="IF Statements"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/iftitle"
+                    android:textColor="@color/teal_200"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iftitle"
+                    android:text="@string/ifelse"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/iftitleinfo"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:layout_constraintTop_toBottomOf="@+id/iftitleinfo"
+                    android:src="@drawable/iff"
+                    android:id="@+id/ifimg"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ifimg"
+                    android:text="IF ELSE Statements"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/ifelse"
+                    android:textColor="@color/teal_200"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ifelse"
+                    android:text="@string/ifelse"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/ifelseinfo"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/ifelseimg"
+                    app:layout_constraintTop_toBottomOf="@+id/ifelseinfo"
+                    android:src="@drawable/iffelse"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ifelseimg"
+                    android:text="nested If Statements"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/nestedif"
+                    android:textColor="@color/teal_200"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nestedif"
+                    android:text="@string/ifelse"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/nestedifinfo"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/nestedfifimg"
+                    app:layout_constraintTop_toBottomOf="@+id/nestedifinfo"
+                    android:src="@drawable/nestedif"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nestedfifimg"
+                    android:text="IF ELSE IF ELSE Statements"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/ifelseif"
+                    android:textColor="@color/teal_200"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ifelseif"
+                    android:text="@string/ifelseifelse"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/ifelseifinfo"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/ifelseifelseinfo"
+                    app:layout_constraintTop_toBottomOf="@+id/ifelseifinfo"
+                    android:src="@drawable/iffelse"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ifelseifelseinfo"
+                    android:text="SWITCH CASE"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/switchcase"
+                    android:textColor="@color/teal_200"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switchcase"
+                    android:text="@string/switchcase"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:id="@+id/switchcaseinfo"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/switchcaseimg"
+                    app:layout_constraintTop_toBottomOf="@+id/switchcaseinfo"
+                android:src="@drawable/switchimg"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Loop statements"
+                    android:textSize="30dp"
+                    android:id="@+id/loop"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/switchcaseimg"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="For loop"
+                    android:textSize="30dp"
+                    android:id="@+id/forloop"
+                    app:layout_constraintTop_toBottomOf="@+id/loop"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/forloopimg"
+                    app:layout_constraintTop_toBottomOf="@+id/forloop"
+                    android:src="@drawable/forstate"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Do while loop"
+                    android:textSize="30dp"
+                    android:id="@+id/whileloop"
+                    app:layout_constraintTop_toBottomOf="@+id/forloopimg"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/whileimg"
+                    app:layout_constraintTop_toBottomOf="@+id/whileloop"
+                    android:src="@drawable/dowhilestate"/>
+
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

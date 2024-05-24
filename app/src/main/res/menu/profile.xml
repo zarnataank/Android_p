@@ -9,8 +9,8 @@
         android:title="Interview questions"
         android:icon="@drawable/img_7"/>
     <item
-        android:id="@+id/fqas"
-        android:title="Fqas"
+        android:id="@+id/logout"
+        android:title="Logout"
         android:icon="@drawable/img_8"/>
 
 </menu>

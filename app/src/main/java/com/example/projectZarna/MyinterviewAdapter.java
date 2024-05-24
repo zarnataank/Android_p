@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.project.R;
@@ -36,8 +37,10 @@ public class MyinterviewAdapter extends RecyclerView.Adapter<MyinterviewAdapter.
     @Override
     public void onBindViewHolder(@NonNull interviews holder, int position) {
         MyinterviewModel myinterviewModel=myinterviewModelArrayList.get(position);
-        holder.textView.setText(myinterviewModel.text);
-
+        holder.textView.setText((CharSequence) myinterviewModel.questions);
+        holder.textViewtwo.setText((CharSequence) myinterviewModel.answer);
+        boolean isExpnaded=myinterviewModelArrayList.get(position).isExpnadable();
+        holder.expnadable.setVisibility(isExpnaded? View.VISIBLE:View.GONE);
 
     }
 
@@ -47,10 +50,23 @@ public class MyinterviewAdapter extends RecyclerView.Adapter<MyinterviewAdapter.
     }
 
     public class interviews extends RecyclerView.ViewHolder {
-        TextView textView;
+        TextView textView,textViewtwo;
+        ConstraintLayout expnadable;
+
         public interviews(@NonNull View itemView) {
             super(itemView);
-            textView=itemView.findViewById(R.id.texts);
+            textView=itemView.findViewById(R.id.question);
+            textViewtwo=itemView.findViewById(R.id.answer);
+            expnadable=itemView.findViewById(R.id.expandable);
+            textView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    MyinterviewModel myinterviewModel=myinterviewModelArrayList.get(getAdapterPosition());
+                    myinterviewModel.setExpnadable(!myinterviewModel.isExpnadable());
+                    notifyItemChanged(getAdapterPosition());
+
+                }
+            });
 
         }
     }

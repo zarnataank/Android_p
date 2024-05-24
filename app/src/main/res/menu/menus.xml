@@ -6,8 +6,8 @@
     android:title="Tutorial"/>
     <item
         android:id="@+id/play"
-        android:icon="@drawable/img_4"
-        android:title="Video"/>
+        android:icon="@drawable/diagram"
+        android:title="Diagrams"/>
     <item
         android:id="@+id/mcqs"
         android:icon="@drawable/img_2"

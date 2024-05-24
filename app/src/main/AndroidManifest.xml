@@ -12,7 +12,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
-
+        <activity
+            android:name="com.example.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name="com.example.projectZarna.oopsfeature"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.oopsbasic"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.Wrapper"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.Array"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.String"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.Strings"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.Controlstatements"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.Datatypes"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.Introduction"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.Intoduction"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.SIgnup"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectZarna.Login"
+            android:exported="false" />
         <activity
             android:name="com.example.projectZarna.Splashscreen"
             android:exported="true">
@@ -24,7 +63,7 @@
         </activity>
         <activity
             android:name="com.example.projectZarna.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

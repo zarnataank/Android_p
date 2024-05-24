@@ -22,13 +22,10 @@ public class tutorials extends Fragment
     ArrayList<MytutorialModel> mytutorialModel;
     RecyclerView recyclerView;
 
-
    public tutorials()
    {
 
    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -49,21 +46,14 @@ public class tutorials extends Fragment
        items.add(new MytutorialModel("Introduction"));
        items.add(new MytutorialModel("Data types"));
        items.add(new MytutorialModel("Control statement,loops"));
-       items.add(new MytutorialModel("Array and wrapper class"));
+       items.add(new MytutorialModel("Strings"));
+       items.add(new MytutorialModel("Array"));
+       items.add(new MytutorialModel("Wrapper classes"));
        items.add(new MytutorialModel("OOP'S basics"));
        items.add(new MytutorialModel("OOP'S features"));
-       items.add(new MytutorialModel("OOP'S keywords/methods"));
-       items.add(new MytutorialModel("Exception handling"));
-       items.add(new MytutorialModel("Multi threading"));
-       items.add(new MytutorialModel("Collection Framework"));
-       items.add(new MytutorialModel("File Handling"));
-       items.add(new MytutorialModel("Applets"));
-       items.add(new MytutorialModel("Abstract window toolkit"));
-       items.add(new MytutorialModel("Swings"));
-       items.add(new MytutorialModel("Networking"));
+
 
        return items;
    }
-
 
 }

@@ -39,12 +39,15 @@
             android:id="@+id/bottamnav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@drawable/bottam"
             app:itemIconTint="#2196F3"
             app:itemTextColor="#2196F3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             app:menu="@menu/menus" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -53,7 +56,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:headerLayout="@layout/my_profile"
         app:itemTextColor="#2196F3"
         app:itemIconTint="#2196F3"
         app:menu="@menu/profile" />
